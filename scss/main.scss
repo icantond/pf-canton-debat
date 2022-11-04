@@ -1,8 +1,10 @@
-@import "./base/_base.scss";
-@import "./components/_article.scss";
-@import "./components/_cards.scss";
-@import "./components/_hero.scss";
-@import "./components/_navbar.scss";
-@import "./components/_carousel.scss";
-@import "./components/_form.scss";
-
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./base/base";
+@import "./components/navbar";
+@import "./components/cover";
+@import "./components/articles";
+@import "./components/cards";
+@import "./components/carousel";
+@import "./components/form";
+@import "./components/footer";

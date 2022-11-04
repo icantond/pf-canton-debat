@@ -1,0 +1,55 @@
+//HEADER-NAVBAR
+.header {
+    background-color: $color-1;
+    text-shadow: 1px 1px 3px $color-3;
+    font-family: $font-1;
+}
+
+.brand__logo:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.brand__title {
+    font-size: 2rem;
+    color: $color-4;
+    font-weight: 600;
+}
+.nav-link{
+    color: $color-4;
+    text-align: center;
+}
+
+.navbar__list{
+    color: $color-4;
+}
+.custom-toggler.navbar-toggler {
+    border-color: $color-4;
+}
+
+.navbar__list {
+
+        li {
+        font-size: 1.5rem;
+
+            &:hover{
+                transform: scale(1.2);
+                transition: 300ms;
+            }
+        }
+
+        a{
+            &:hover{
+                color: $color-2;
+            }
+
+            &:active{
+                color: $color-3;
+            }
+        }
+    }
+
+nav a {
+    color: $color-4;
+}
+// FIN HEADER-NAVBAR

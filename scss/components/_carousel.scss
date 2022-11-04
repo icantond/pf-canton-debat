@@ -1,0 +1,17 @@
+
+.carousel{
+    text-shadow: 1px 1px 3px $color-3;
+    max-height: 90vh;
+
+    &-text{
+        font-family: $font-2;
+        font-size: 0.9rem;
+    }
+
+    &-title{
+        font-family: $font-1;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+}

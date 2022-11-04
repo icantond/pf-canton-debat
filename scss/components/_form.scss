@@ -1,0 +1,42 @@
+.contact-form {
+    background-color: $color-3;
+}
+
+.form-label{
+    font-family: $font-2;
+    color: $color-4;
+}
+
+.form-check-label{
+    font-family: $font-2;
+    color: $color-4;
+    font-size: 0.9rem;
+}
+
+.form-check-input:checked{
+    background-color: $color-1;
+}
+
+.input--inline {
+    display: inline;
+    margin: 5px;
+}
+
+.send__button {
+    background-color: $color-1;
+    width: fit-content;
+    margin: 1.2rem;
+    font-weight: 600;
+    font-family: $font-1;
+    padding: 4px 10px;
+    border-radius: 3%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.326);
+
+        a{
+            color: $color-3;
+        }
+
+        :hover{
+            background-color: $color-2;
+        }
+    }

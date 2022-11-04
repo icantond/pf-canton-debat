@@ -1,0 +1,119 @@
+
+// TARJETAS
+section .cards {
+    width: 90%;
+}
+
+.cards{
+    
+    &__intro{
+        width: 90vw;
+        margin: 5rem auto 2rem;    
+    }
+
+    &__title{
+        font-family: $font-1;
+        font-weight: 600;
+        font-size: 1.4rem;
+        text-align: center;    
+    }
+
+    &__text{
+        font-family: $font-2;
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &__element {
+        min-width: min-content;
+        max-width: 20%;
+        border: 0.5px solid $color-3;
+        border-radius: 3%;
+        box-shadow: 5px 5px 3px hsla(197, 37%, 24%, 0.55);
+        text-align: center;
+        background-color: $color-4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 2.7rem;
+
+        &:hover {
+            transform: scale(1.15);
+            transition-duration: 700ms;
+        }
+
+        &__circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 2rem;
+        }
+        
+        &__name {
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+            font-family: $font-1;
+            font-size: 1.2rem;
+        }
+
+        &__profession {
+            font-family: $font-1;
+            font-weight: lighter;
+            font-size: 1rem;        
+        }
+        
+        &__image {
+            border-radius: 7%;
+            margin-top: 3%;
+            padding: 5px;
+            width: 90%;
+            display: inline-block;
+        }
+
+        &__img__container{
+            min-width: 200px;
+        }
+
+        &__text {
+            margin: 10px;
+            font-family: $font-2;
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+    }
+
+    &__button {
+        background-color: $color-3;
+        width: fit-content;
+        margin: 1.2rem;
+        padding: 4px 10px;
+        border-radius: 3%;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.326);
+
+        a {
+            font-family: $font-1;
+            font-size: 0.8rem;
+            color: $color-4;
+        }
+
+        &:hover {
+            background-color: $color-1;
+        }
+    }
+}
+
+.articlesSection .cards__container {
+    width: 90%;
+    justify-content: center;
+}
