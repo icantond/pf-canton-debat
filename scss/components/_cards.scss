@@ -7,14 +7,14 @@ section .cards {
 .cards{
     
     &__intro{
-        width: 90vw;
+        width: 60vw;
         margin: 5rem auto 2rem;    
     }
 
     &__title{
         font-family: $font-1;
         font-weight: 600;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         text-align: center;    
     }
 
@@ -30,7 +30,8 @@ section .cards {
     }
 
     &__element {
-        @include dflex(column, center, center, nowrap);
+        @include dflex(column, space-around, center, nowrap);
+        height: 500px;
         min-width: min-content;
         max-width: 20%;
         border: 0.5px solid $color-3;
@@ -55,15 +56,14 @@ section .cards {
         
         &__name {
             padding-top: 1rem;
-            padding-bottom: 0.5rem;
             font-family: $font-1;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
         }
 
         &__profession {
             font-family: $font-1;
-            font-weight: lighter;
-            font-size: 1rem;        
+            font-size: 1.2rem;        
         }
         
         &__image {
@@ -90,7 +90,7 @@ section .cards {
     &__button {
         background-color: $color-3;
         width: fit-content;
-        margin: 1.2rem;
+        margin: 1.2rem;         
         padding: 4px 10px;
         border-radius: 3%;
         box-shadow: 2px 2px rgba(0, 0, 0, 0.326);
