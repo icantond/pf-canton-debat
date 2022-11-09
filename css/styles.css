@@ -23,6 +23,10 @@ body {
   height: min-content;
 }
 
+main {
+  padding: 1rem;
+}
+
 @font-face {
   font-family: "Alef", sans-serif;
   font-family: "Josefin Sans", sans-serif;
@@ -272,6 +276,7 @@ section .cards {
 
 .form-check-input:checked {
   background-color: #74C69D;
+  outline: #74C69D;
 }
 
 .input--inline {
@@ -281,9 +286,11 @@ section .cards {
 
 .send__button {
   background-color: #74C69D;
-  width: fit-content;
-  margin: 1.2rem;
+  width: 10rem;
+  text-align: center;
+  margin: auto;
   font-weight: 600;
+  text-shadow: 1px 1px 1px #ffffff;
   font-family: "Alef", sans-serif;
   padding: 4px 10px;
   border-radius: 3%;
