@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,12 +28,6 @@ main {
   padding: 1rem;
 }
 
-@font-face {
-  font-family: "Alef", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Work Sans", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap");
-}
 main {
   background: rgb(255, 255, 255);
   background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(250, 250, 250) 51%, rgb(240, 240, 240) 96%, rgb(182, 182, 182) 100%, rgb(240, 240, 240) 67%, rgb(136, 135, 135) 100%);
@@ -53,6 +48,7 @@ main {
   font-size: 2rem;
   color: #ffffff;
   font-weight: 600;
+  text-align: center;
 }
 
 .nav-link {
@@ -60,16 +56,16 @@ main {
   text-align: center;
 }
 
-.navbar__list {
-  color: #ffffff;
-}
-
 .custom-toggler.navbar-toggler {
   border-color: #ffffff;
 }
 
+.navbar__list {
+  color: #ffffff;
+}
 .navbar__list li {
   font-size: 1.5rem;
+  font-weight: 700;
 }
 .navbar__list li:hover {
   transform: scale(1.2);
@@ -97,13 +93,13 @@ nav a {
   font-weight: bolder;
   color: #ffffff;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 .cover__legend__text {
   font-family: "Josefin Sans", sans-serif;
   font-style: italic;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
 }
 
@@ -124,9 +120,11 @@ nav a {
 }
 .articles__article__title {
   font-family: "Alef", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
+  margin: 1rem auto 1rem;
+  line-height: 125%;
 }
 .articles__article__text {
   font-family: "Work Sans", sans-serif;
@@ -138,14 +136,23 @@ section .cards {
   width: 90%;
 }
 
+.cards__overline {
+  font-family: "Work Sans", sans-serif;
+  color: #74C69D;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
 .cards__intro {
   width: 60vw;
-  margin: 5rem auto 2rem;
+  margin: 1rem auto 2rem;
 }
 .cards__title {
   font-family: "Alef", sans-serif;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 .cards__text {
@@ -164,7 +171,7 @@ section .cards {
 .cards__element {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   height: 500px;
@@ -189,14 +196,17 @@ section .cards {
   margin: 2rem;
 }
 .cards__element__name {
-  padding-top: 1rem;
   font-family: "Alef", sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
+  align-self: flex-start;
+  margin: auto;
 }
 .cards__element__profession {
   font-family: "Alef", sans-serif;
   font-size: 1.2rem;
+  align-self: flex-start;
+  margin: 0.5rem auto;
 }
 .cards__element__image {
   border-radius: 7%;
@@ -209,11 +219,13 @@ section .cards {
   min-width: 200px;
 }
 .cards__element__text {
-  margin: 10px;
+  height: 45%;
+  margin: 0.5rem;
   font-family: "Work Sans", sans-serif;
   font-weight: lighter;
   font-style: italic;
   font-size: 0.8rem;
+  padding-bottom: 1rem;
 }
 .cards__button {
   background-color: #264653;
@@ -261,20 +273,21 @@ section .cards {
 }
 .contact-form {
   background-color: #264653;
+  border-radius: 4%;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.516);
 }
 
-.form-label {
+form {
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
 }
-
-.form-check-label {
-  font-family: "Work Sans", sans-serif;
-  color: #ffffff;
+form-label {
+  font-size: 1.1rem;
+}
+form-check-label {
   font-size: 0.9rem;
 }
-
-.form-check-input:checked {
+form-check-input:checked {
   background-color: #74C69D;
   outline: #74C69D;
 }
@@ -300,7 +313,7 @@ section .cards {
   color: #264653;
 }
 .send__button :hover {
-  background-color: #FFC727;
+  color: #ffffff;
 }
 
 .footer {
@@ -387,6 +400,25 @@ section .cards {
   font-family: "Alef", sans-serif;
   font-size: 0.8rem;
   margin: 0;
+}
+
+.button {
+  background-color: #264653;
+  color: #74C69D;
+  text-align: center;
+  width: fit-content;
+  margin: 1.2rem;
+  padding: 4px 10px;
+  border-radius: 3%;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.326);
+}
+.button a {
+  font-family: "Alef", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.button:hover {
+  background-color: #74C69D;
 }
 
 /*# sourceMappingURL=styles.css.map */

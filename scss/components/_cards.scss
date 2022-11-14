@@ -1,19 +1,27 @@
-// TARJETAS
 section .cards {
     width: 90%;
 }
 
 .cards {
+    &__overline{
+        font-family: $font-2;
+        color: $color-1;
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
 
     &__intro {
         width: 60vw;
-        margin: 5rem auto 2rem;
+        margin: 1rem auto 2rem;
     }
 
     &__title {
         font-family: $font-1;
         font-weight: 600;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -29,7 +37,7 @@ section .cards {
     }
 
     &__element {
-        @include dflex(column, space-around, center, nowrap);
+        @include dflex(column, space-between, center, nowrap);
         height: 500px;
         min-width: min-content;
         max-width: 20%;
@@ -54,15 +62,18 @@ section .cards {
         }
 
         &__name {
-            padding-top: 1rem;
             font-family: $font-1;
             font-size: 1.4rem;
             font-weight: 600;
+            align-self: flex-start;
+            margin: auto;
         }
 
         &__profession {
             font-family: $font-1;
             font-size: 1.2rem;
+            align-self: flex-start;
+            margin: 0.5rem auto;
         }
 
         &__image {
@@ -78,11 +89,13 @@ section .cards {
         }
 
         &__text {
-            margin: 10px;
+            height: 45%;
+            margin: 0.5rem;
             font-family: $font-2;
             font-weight: lighter;
             font-style: italic;
             font-size: 0.8rem;
+            padding-bottom: 1rem;
         }
     }
 

@@ -1,4 +1,3 @@
-// ARTICULOS MAIN
 .videoArticle__article{
     padding: 2rem;
     align-items: center;
@@ -21,9 +20,11 @@
 
     &__title{
         font-family: $font-1;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         font-weight: 600;
         text-align: center;
+        margin: 1rem auto 1rem;
+        line-height: 125%;
     }
 
     &__text{
@@ -32,4 +33,3 @@
         text-align: center;
     }
 }
-// FIN ARTICULOS MAIN

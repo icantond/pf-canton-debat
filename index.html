@@ -9,7 +9,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Lotus | Espacio de Yoga</title>
+    <title>Lotus | Espacio de Yoga - Home</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <meta name="description" content="Somos el primer espacio integral de Yoga y holística en la ciudad de Santa Fe">
 </head>
@@ -58,14 +58,14 @@
         <!-- comienzo texto header -->
         <div class="row">
             <div class="cover__legend col-12 col-md-4 offset-md-1">
-                <h2 class="cover__legend__title">Somos la casa del Yoga en Santa Fe</h2>
-                <p class="cover__legend__text">"Una mente pacífica, centrada y no focalizada en dañar a otros,<br> es
+                <h2 class="cover__legend__title" data-aos="fade-right" data-aos-duration="1000">Somos la casa del Yoga en Santa Fe</h2>
+                <p class="cover__legend__text" data-aos="fade-right" data-aos-duration="1000">"Una mente pacífica, centrada y no focalizada en dañar a otros, es
                     más
                     fuerte que cualquier fuerza física del Universo."</p>
             </div>
             <img src="./img/cover-img.svg"
                 alt="Ilustración de personas practicando Yoga en distintas posiciones con la palabra Yoga detrás"
-                class="col-12 col-md-6">
+                class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1000">
         </div>
     </section>
     <!-- fin del cover -->
@@ -73,18 +73,21 @@
     <!-- Comienzo del main -->
     <main>
         <!-- comienzo zona de articulos de home -->
-        <section class="articles container col-12 col-md-8 p-3">
+        <section class="articles container col-12 col-md-10 p-3">
             <!-- comienzo articulo 1 -->
             <article class="articles__article row" data-aos="zoom-in-up" data-aos-duration="1000">
                 <img src="./img/home-article-1-img.svg" alt="Ilustración de una mujer practicando yoga"
-                    class="articles__article__img col-12 col-md-7">
-                <div class="articles__article__legend col-12 col-md-5 mt-3">
+                    class="articles__article__img col-12 col-md-6">
+                <div class="articles__article__legend col-12 col-md-6 mt-3">
                     <h2 class="articles__article__title">¿Por qué practicar Yoga?</h2>
                     <p class="articles__article__text"> Cuando practicamos Yoga sucede algo único e irrepetible: a
                         través de la respiración, conectamos con todas las partes de nuestro cuerpo. Logramos una
                         concentración y meditamos a través del movimiento. Eso hace que todo nuestro ser esté realmente
                         conectado con ese momento presente y, es ahí, cuando comprenderemos el significado del Yoga: la
                         unión entre el cuerpo, la mente y el alma.</p>
+                        <div class="button m-auto">
+                            <a href="https://www.welife.es/cuerpo/beneficios-yoga-salud-tipos-posturas-respiracion-cuerpo-mente/" title="Conocé más" target="_blank">Conocé más...</a>
+                        </div>
                 </div>
             </article>
             <!-- fin articulo 1 -->
@@ -93,12 +96,15 @@
             <article class="articles__article row" data-aos="zoom-in-up" data-aos-duration="1000">
                 <img src="./img/home-article-2-img.svg"
                     alt="Ilustración de un grupo de hombres y mujeres de diferentes edades practicando poses de yoga"
-                    class="articles__article__img col-12 col-md-7">
-                <div class="articles__article__legend col-12 col-md-5 mt-3">
+                    class="articles__article__img col-12 col-md-6">
+                <div class="articles__article__legend col-12 col-md-6 mt-3">
                     <h2 class="articles__article__title ">¡Animate! El Yoga es adecuado para todas las edades.</h2>
                     <p class="articles__article__text"> Es una disciplina segura y áltamente recomendada por
                         profesionales para todas las edades, desde niños a adultos mayores. Tenemos clases para niños de
                         3 años y adultos sín límite de edad!</p>
+                        <div class="button m-auto">
+                            <a href="./pages/clases.html" title="Conocé más">Conocé más...</a>
+                        </div>
                 </div>
                 <!-- fin articulo 2 -->
             </article>
@@ -107,6 +113,7 @@
 
         <!-- comienzo intro tarjetas opiniones de alumnos -->
         <section class="cards" data-aos="zoom-in-up" data-aos-duration="1000">
+            <h2 class="cards__overline">OPINIONES</h2>
             <div class="cards__intro">
                 <h2 class="cards__title">¿Qué opinan nuestros alumnos?</h2>
                 <p class="cards__text">Nuestra meta es que todos nuestros alumnos estén 100% satisfechos con sus clases
@@ -191,8 +198,6 @@
                         alt="icono de Instagram" class="footer__social-media__icon"></a>
                 <a href="https://www.twitter.com" target="_blank"><img src="./img/twitter-icon.svg"
                         alt="icono de Twitter" class="footer__social-media__icon"></a>
-                <a href="https://www.pinterest.com" target="_blank"><img src="./img/pinterest-icon.svg"
-                        alt="icono de pinterest" class="footer__social-media__icon"></a>
                 <a href="https://www.tiktok.com" target="_blank"><img src="./img/tiktok-icon.svg" alt="icono de Tiktok"
                         class="footer__social-media__icon"></a>
                 <a href="https://www.whatsapp.com" target="_blank"><img src="./img/whatsapp-icon.svg"
