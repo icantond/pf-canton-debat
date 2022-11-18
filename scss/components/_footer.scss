@@ -91,3 +91,13 @@
         }
     }
 }
+.dev{
+
+    &__logo{
+        width: 200px;
+        }
+    
+    &:hover{
+        transform: none !important;
+    }
+}

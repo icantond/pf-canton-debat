@@ -299,21 +299,15 @@ form-check-input:checked {
 
 .send__button {
   background-color: #74C69D;
+  display: block;
   width: 10rem;
   text-align: center;
-  margin: auto;
   font-weight: 600;
   text-shadow: 1px 1px 1px #ffffff;
   font-family: "Alef", sans-serif;
   padding: 4px 10px;
   border-radius: 3%;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.326);
-}
-.send__button a {
-  color: #264653;
-}
-.send__button :hover {
-  color: #ffffff;
 }
 
 .footer {
@@ -400,6 +394,13 @@ form-check-input:checked {
   font-family: "Alef", sans-serif;
   font-size: 0.8rem;
   margin: 0;
+}
+
+.dev__logo {
+  width: 200px;
+}
+.dev:hover {
+  transform: none !important;
 }
 
 .button {

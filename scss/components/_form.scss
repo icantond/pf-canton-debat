@@ -29,21 +29,13 @@ form{
 
 .send__button {
     background-color: $color-1;
+    display: block;
     width: 10rem;
     text-align: center;
-    margin: auto;
     font-weight: 600;
     text-shadow: 1px 1px 1px $color-4;
     font-family: $font-1;
     padding: 4px 10px;
     border-radius: 3%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.326);
-
-        a{
-            color: $color-3;
-        }
-
-        :hover{
-            color: $color-4;
-        }
     }
